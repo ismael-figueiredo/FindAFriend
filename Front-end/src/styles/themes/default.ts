@@ -4,5 +4,6 @@ export const defaultTheme = {
     danger: '#F15156',
     warning: '#F4D35E',
     background: '#fcebec',
+    white: '#fff',
   },
 }
