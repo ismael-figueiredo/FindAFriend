@@ -1,6 +1,7 @@
 import { HomeContainer } from './styles'
 import LogoFindAFriend from '../../assets/logo.png'
 import Bunner from '../../assets/bunner.png'
+import { SelectState } from '../../components/selectState'
 export function Home() {
   return (
     <HomeContainer>
@@ -13,7 +14,18 @@ export function Home() {
         </h1>
         <img src={Bunner} alt="" />
       </main>
-      <footer></footer>
+      <footer>
+        <section>
+          <p>
+            Encontre o animal de estimação ideal <br />
+            para o seu estilo de vida!
+          </p>
+        </section>
+        <section>
+          <span>Busque um amigo:</span>
+          <SelectState/>
+        </section>
+      </footer>
     </HomeContainer>
   )
 }
