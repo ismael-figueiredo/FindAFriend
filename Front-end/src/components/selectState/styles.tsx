@@ -12,11 +12,8 @@ export const Select = styled.select`
   font-weight: 700;
   line-height: 2.125rem;
   padding-left: 0.5rem;
- 
   outline: none;
-    &:focus {
-    background-color: ${({ theme }) =>
-      theme.colors.danger};  // Cor de fundo ao focar
+  option {
+    color: ${({ theme }) => theme.colors.primary};
   }
-  
 `

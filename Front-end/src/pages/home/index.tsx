@@ -2,6 +2,8 @@ import { HomeContainer } from './styles'
 import LogoFindAFriend from '../../assets/logo.png'
 import Bunner from '../../assets/bunner.png'
 import { SelectState } from '../../components/selectState'
+import { SelectCity } from '../../components/selectCity'
+import { SearchButton } from '../../components/searchButton'
 export function Home() {
   return (
     <HomeContainer>
@@ -15,15 +17,24 @@ export function Home() {
         <img src={Bunner} alt="" />
       </main>
       <footer>
-        <section>
+        <section className="FirstSection">
           <p>
             Encontre o animal de estimação ideal <br />
             para o seu estilo de vida!
           </p>
         </section>
-        <section>
+        <section className="SecondSection">
           <span>Busque um amigo:</span>
-          <SelectState/>
+          <SelectState>
+            <option value="">Sc</option>
+            <option value="">Sc</option>
+            <option value="">Sc</option>
+          </SelectState>
+          <SelectCity>
+            <option value="">Florianópolis</option>
+            <option value="">Joinville</option>
+          </SelectCity>
+          <SearchButton/>
         </section>
       </footer>
     </HomeContainer>
